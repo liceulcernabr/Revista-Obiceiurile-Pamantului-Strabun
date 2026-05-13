@@ -624,13 +624,13 @@
         </div>
         <div class="card-divider"></div>
         <div class="btn-row">
-          <a href="https://www.calameo.com/read/0082212380ea03a49c3fa" class="card-btn" target="_blank">
+          <a href="#" onclick="togglePDF(event)" class="card-btn">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
             Citește online
           </a>
-          <a href="https://www.calameo.com/books/0082212380ea03a49c3fa" class="card-btn card-btn-secondary" target="_blank">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M10 6H6a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-4"/><path d="M14 4h6m0 0v6m0-6L10 14"/></svg>
-            Vezi pe Calameo
+          <a href="revista_nr1_2026.pdf" class="card-btn card-btn-secondary" download>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+            Descarcă PDF
           </a>
         </div>
       </div>
@@ -807,5 +807,40 @@ function filterTable(btn, premiu) {
   <p class="footer-copy">© 2026 — Revistă Educațională „Obiceiurile Pământului Străbun"</p>
 </footer>
 
+
+<!-- PDF VIEWER OVERLAY -->
+<div id="pdfOverlay" style="display:none; position:fixed; inset:0; background:rgba(0,0,0,0.85); z-index:9999; flex-direction:column; align-items:center; justify-content:center;">
+  <div style="position:relative; width:90%; max-width:860px; height:90vh; background:#fff; border-radius:6px; overflow:hidden; box-shadow:0 20px 60px rgba(0,0,0,0.5);">
+    <div style="background:#8B1A1A; color:#fff; padding:12px 20px; display:flex; align-items:center; justify-content:space-between; font-family:'Crimson Pro',serif; font-size:15px;">
+      <span>&#128214; Obiceiurile P&#259;m&#226;ntului Str&#259;bun &mdash; Nr. 1 / 2026</span>
+      <div style="display:flex; gap:12px; align-items:center;">
+        <a href="revista_nr1_2026.pdf" download style="color:#FFD700; font-size:13px; text-decoration:none; border:1px solid #FFD700; padding:4px 12px; border-radius:3px;">&#8659; Descarcă</a>
+        <button onclick="closePDF()" style="background:none; border:none; color:#fff; font-size:24px; cursor:pointer; line-height:1; padding:0 4px;">&times;</button>
+      </div>
+    </div>
+    <iframe id="pdfFrame" src="" style="width:100%; height:calc(100% - 50px); border:none;"></iframe>
+  </div>
+</div>
+<script>
+function togglePDF(e) {
+  e.preventDefault();
+  var overlay = document.getElementById('pdfOverlay');
+  overlay.style.display = 'flex';
+  document.getElementById('pdfFrame').src = 'revista_nr1_2026.pdf';
+  document.body.style.overflow = 'hidden';
+}
+function closePDF() {
+  var overlay = document.getElementById('pdfOverlay');
+  overlay.style.display = 'none';
+  document.getElementById('pdfFrame').src = '';
+  document.body.style.overflow = '';
+}
+document.getElementById('pdfOverlay').addEventListener('click', function(e) {
+  if (e.target === this) closePDF();
+});
+document.addEventListener('keydown', function(e) {
+  if (e.key === 'Escape') closePDF();
+});
+</script>
 </body>
 </html>
