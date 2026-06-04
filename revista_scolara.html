@@ -170,7 +170,7 @@
   main {
     position: relative;
     z-index: 1;
-    max-width: 960px;
+    max-width: 1280px;
     margin: 0 auto;
     padding: 60px 24px 80px;
   }
@@ -218,9 +218,10 @@
 
   /* ── MAGAZINE GRID ── */
   .magazine-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    display: flex;
+    flex-wrap: wrap;
     gap: 36px;
+    justify-content: center;
   }
 
   /* ── CARD ── */
@@ -234,6 +235,8 @@
     display: flex;
     flex-direction: column;
     animation: fadeUp 0.6s ease both;
+    width: 320px;
+    flex-shrink: 0;
   }
 
   .card:hover {
@@ -721,20 +724,299 @@
       </div>
     </div>
 
-    <!-- Buton PDF 2026 -->
-    <div class="pdf-row" style="justify-content:center; border-top:none; padding-top:0; margin-top:0;">
+    <!-- ══ SECȚIUNEA 1: Gânduri închinate mamei ══ -->
+    <div class="results-subsection">
+      <h3 class="results-sub-title">1. Secțiunea „Gânduri închinate mamei"</h3>      <div class="table-wrapper">
+        <table class="results-table" id="t1">
+          <colgroup><col class="col-nr"><col class="col-nume"><col class="col-clasa"><col class="col-scoala"><col class="col-jud"><col class="col-prof"><col class="col-premiu"></colgroup>
+          <thead><tr><th>Nr.</th><th>Numele elevului</th><th>Clasa</th><th>Unitatea de învățământ</th><th>Jud.</th><th>Profesor coordonator</th><th>Premiul</th></tr></thead>
+          <tbody>
+            <tr><td>1</td><td>Balea Marian, Balea Mihaela, Chițu Ștefan, Iuseim Selena, Forentino Ilaria, Clondir Alexandru, Ghiță Alexandru, Răducanu Silviu, Picu Georgiana, Pârvan Nicoleta, Pârvan Gabriela</td><td>a VI-a</td><td>Liceul Special „Sfânta Maria" Călărași</td><td>Călărași</td><td>Stroescu Liliana Simona, Mihai Marilena</td><td><span class="badge badge-p">Participare</span></td></tr>
+            <tr><td>2</td><td>Ivan Andreea Simona</td><td>Pregătitoare</td><td>Palatul Copiilor Slobozia</td><td>Ialomița</td><td>Paraschiv Marina</td><td><span class="badge badge-p">Participare</span></td></tr>
+            <tr><td>3</td><td>Gavrilă Bianca Maria Elena, Neagu Violeta Antonia, Curt Cristina Ionela</td><td>a V-a</td><td>Școala Gimnazială nr.1 Bolintin-Vale</td><td>Giurgiu</td><td>Pencu Cătălin</td><td><span class="badge badge-p">Participare</span></td></tr>
+            <tr><td>4</td><td>Botezatu Rebeca Maria</td><td>a V-a</td><td>Școala Gimnazială Bordei Verde</td><td>Brăila</td><td>Oprea Tudorița</td><td><span class="badge badge-i">Premiul I</span></td></tr>
+            <tr><td>5</td><td>Grosu Maria-Cristina</td><td>a VIII-a</td><td>Colegiul Național Pedagogic „D. P. Perpessicius" Brăila</td><td>Brăila</td><td>Aldea Carmen-Lăcrămioara</td><td><span class="badge badge-iii">Premiul III</span></td></tr>
+            <tr><td>6</td><td>Papuc Roxana-Mihaela</td><td>a IX-a</td><td>Colegiul Național Pedagogic „D. P. Perpessicius" Brăila</td><td>Brăila</td><td>Aldea Carmen-Lăcrămioara</td><td><span class="badge badge-m">Mențiune</span></td></tr>
+            <tr><td>7</td><td>Coteț Maria Giulia</td><td>a IX-a</td><td>Colegiul Național Pedagogic „D. P. Perpessicius" Brăila</td><td>Brăila</td><td>Aldea Carmen-Lăcrămioara</td><td><span class="badge badge-p">Participare</span></td></tr>
+            <tr><td>8</td><td>Denchev Rafaela, Băiculescu Maria, Chițoi Andreea, Rucăreanu Sofia</td><td>a VIII-a</td><td>Școala Gimnazială Carol I Călărași</td><td>Călărași</td><td>Gugulea Maria, Dumitru Maria Afrodita</td><td><span class="badge badge-p">Participare</span></td></tr>
+            <tr><td>9</td><td>Moisin Delia, Negrescu Maya, Moisin Eduard Ștefan, Moisin Robert</td><td>VI, V, II</td><td>Palatul Copiilor Timiș</td><td>Timiș</td><td>Mihăescu Iuliana</td><td><span class="badge badge-p">Participare</span></td></tr>
+            <tr><td>10</td><td>Giol Victor</td><td>a IX-a</td><td>Liceul Teoretic „Panait Cerna" Brăila</td><td>Brăila</td><td>David Ecaterina Manuela</td><td><span class="badge badge-i">Premiul I</span></td></tr>
+            <tr><td>11</td><td>Scrob Casiana</td><td>a V-a</td><td>Școala Gimnazială „Nicodim Ganea" Bistra</td><td>Alba</td><td>Vîrtan Mariana Simona</td><td><span class="badge badge-p">Participare</span></td></tr>
+            <tr><td>12</td><td>Cojocaru Marta</td><td>a XI-a</td><td>Liceul Teoretic „Panait Cerna" Brăila</td><td>Brăila</td><td>David Ecaterina Manuela</td><td><span class="badge badge-p">Participare</span></td></tr>
+            <tr><td>13</td><td>Nicolae Camelia</td><td>a XII-a</td><td>Palatul Copiilor Tulcea</td><td>Tulcea</td><td>Peiciu Marinela</td><td><span class="badge badge-i">Premiul I</span></td></tr>
+            <tr><td>14</td><td>Dumitru Teodora</td><td>a III-a</td><td>Școala Gimnazială „Nicolae Bălcescu" Craiova</td><td>Craiova</td><td>Milă Paula Mădălina</td><td><span class="badge badge-p">Participare</span></td></tr>
+            <tr><td>15</td><td>Tănase Rebecca Maria, Matei Anais Sofia</td><td>I</td><td>Școala Gimnazială „Ludovig" Niculiței</td><td>Tulcea</td><td>Cerșamba Andreea</td><td><span class="badge badge-p">Participare</span></td></tr>
+            <tr><td>16</td><td>Buga David</td><td>a III-a</td><td>Școala Gimnazială „Ion Șuhane" Frumosu</td><td>Suceava</td><td>Șandru Cornelia</td><td><span class="badge badge-i">Premiul I</span></td></tr>
+            <tr><td>17</td><td>Gorgovan Carol</td><td>a VII-a</td><td>Palatul Copiilor Brăila</td><td>Brăila</td><td>Ilie Elena Carmina</td><td><span class="badge badge-p">Participare</span></td></tr>
+            <tr><td>18</td><td>Roade-Fier Andreea, Teteșanu David, Enache Adelina</td><td>a X-a – a XI-a</td><td>Liceul „Danubius" Călărași</td><td>Călărași</td><td>Drumea Aurelia</td><td><span class="badge badge-p">Participare</span></td></tr>
+            <tr><td>19</td><td>Stan Delia, Stoica Cătălina, Predescu Teodora, Beibăr Adelina, Abdi Maria Alyssa — Grup vocal „Mugurașii Găeșteni"</td><td>—</td><td>Clubul Copiilor Găești</td><td>Dâmbovița</td><td>Florea Simona</td><td><span class="badge badge-p">Participare</span></td></tr>
+            <tr><td>20</td><td>Chivu Maria, Stoica Eva-Maria, Abdi Maria Alyssa, Spătaru Beatrice, Ilie Anabela Iustina — Grup vocal „Armonia"</td><td>—</td><td>Clubul Copiilor Găești</td><td>Dâmbovița</td><td>Florea Simona</td><td><span class="badge badge-p">Participare</span></td></tr>
+            <tr><td>21</td><td>Gheorghe Diana</td><td>a VII-a</td><td>Școala Gimnazială Viperești</td><td>Buzău</td><td>Lazăr Alina</td><td><span class="badge badge-p">Participare</span></td></tr>
+            <tr><td>22</td><td>Coleș Denisa, Șerbănescu Daria, Nicolae Alesia, Mihai Marina, Constantin Denisa</td><td>a VII-a</td><td>Școala Gimnazială Viperești</td><td>Buzău</td><td>Lazăr Alina</td><td><span class="badge badge-p">Participare</span></td></tr>
+            <tr><td>23</td><td>Nicolae Alesia, Șerbănescu Daria, Mihai Marina, Constantin Denisa</td><td>a VII-a</td><td>Școala Gimnazială Viperești</td><td>Buzău</td><td>Lazăr Alina</td><td><span class="badge badge-p">Participare</span></td></tr>
+            <tr><td>24</td><td>Olteanu Bianca</td><td>a XI-a</td><td>Clubul Copiilor Tecuci</td><td>Galați</td><td>Chiscop Nicoleta</td><td><span class="badge badge-p">Participare</span></td></tr>
+            <tr><td>25</td><td>Ghiorghiu Nikolas Adrian</td><td>a V-a</td><td>Clubul Copiilor Tecuci</td><td>Galați</td><td>Chiscop Nicoleta</td><td><span class="badge badge-p">Participare</span></td></tr>
+            <tr><td>26</td><td>Dranga Georgia Sarai</td><td>a XII-a</td><td>Liceul Tehnologic „Sava Brancovici" Ineu</td><td>Arad</td><td>Sas Lavinia Loredana</td><td><span class="badge badge-m">Mențiune</span></td></tr>
+            <tr><td>27</td><td>Ermeneanu Elena Roxana</td><td>a XII-a</td><td>Liceul Teoretic „Panait Cerna" Brăila</td><td>Brăila</td><td>Mareș Adina</td><td><span class="badge badge-ii">Premiul II</span></td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- ══ SECȚIUNEA 2: Spectacol folcloric ══ -->
+    <div class="results-subsection">
+      <h3 class="results-sub-title">2. Secțiunea Spectacol folcloric „Primăvara în satul românesc"</h3>      <div class="table-wrapper">
+        <table class="results-table" id="t2">
+          <colgroup><col class="col-nr"><col class="col-nume"><col class="col-clasa"><col class="col-scoala"><col class="col-jud"><col class="col-prof"><col class="col-premiu"></colgroup>
+          <thead><tr><th>Nr.</th><th>Numele elevului</th><th>Clasa</th><th>Unitatea de învățământ</th><th>Jud.</th><th>Profesor coordonator</th><th>Premiul</th></tr></thead>
+          <tbody>
+            <tr><td>1</td><td>Iancu Gabriela, Neagu Veronica, Oltenacu Raisa, Ardem Denisa, Șandru Nicoleta, Mihai Patricia, Bucur Sabrina, Craia Daria, Zainea Adina, Sterea Daria</td><td>IX–XI</td><td>Liceul „Danubius" Călărași</td><td>Călărași</td><td>Drumea Aurelia</td><td><span class="badge badge-ii">Premiul II</span></td></tr>
+            <tr><td>2</td><td>Răduță Daria, Ilie Iulia, Păuna Ana-Maria, Stoica Cataleya, Serafim Laura — Grup vocal „Armonia"</td><td>—</td><td>Clubul Copiilor Găești</td><td>Dâmbovița</td><td>Florea Simona</td><td><span class="badge badge-m">Mențiune</span></td></tr>
+            <tr><td>3</td><td>Butură Tudor Andrei, Taz Sumeyya, Bogdan Ana Maria, Tecșa Antonia Cristiana, Guirca Bogdan Adrian</td><td>a VI-a</td><td>Colegiul Tehnic „Apulum" Alba Iulia</td><td>Alba</td><td>Rusu Elena, Cunțan Mariana</td><td><span class="badge badge-p">Participare</span></td></tr>
+            <tr><td>4</td><td>Purda Maria, Dumitraș Eusebiu Baniamin, Bădău Andrei Nicolae</td><td>a V-a, a X-a</td><td>Liceul „Dr. Lazăr Chirilă" Baia de Arieș</td><td>Alba</td><td>Pârțilă Doriana</td><td><span class="badge badge-iii">Premiul III</span></td></tr>
+            <tr><td>5</td><td>Ansamblul Cerna</td><td>a IX-a – a XII-a</td><td>Liceul Teoretic „Panait Cerna" Brăila</td><td>Brăila</td><td>Bujor Nicoleta, Gagu Adelina</td><td><span class="badge badge-i">Premiul I</span></td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- ══ SECȚIUNEA 3: Atelier de creație – Mărțișorul ══ -->
+    <div class="results-subsection">
+      <h3 class="results-sub-title">3. Secțiunea Atelier de creație „Mărțișorul de altădată și de azi"</h3>      <div class="table-wrapper">
+        <table class="results-table" id="t3">
+          <colgroup><col class="col-nr"><col class="col-nume"><col class="col-clasa"><col class="col-scoala"><col class="col-jud"><col class="col-prof"><col class="col-premiu"></colgroup>
+          <thead><tr><th>Nr.</th><th>Numele elevului</th><th>Clasa</th><th>Unitatea de învățământ</th><th>Jud.</th><th>Profesor coordonator</th><th>Premiul</th></tr></thead>
+          <tbody>
+            <tr><td>1</td><td>Nicoară Sofia</td><td>a II-a</td><td>Palatul Copiilor Satu Mare</td><td>Satu Mare</td><td>Szemak Zsuzsa</td><td><span class="badge badge-i">Premiul I</span></td></tr>
+            <tr><td>2</td><td>Ilie Carla</td><td>a II-a</td><td>Școala Gimnazială „Axente Sever" Aiud</td><td>Alba</td><td>Ciortea Ștefania Liana</td><td><span class="badge badge-ii">Premiul II</span></td></tr>
+            <tr><td>3</td><td>Mariotti Alexandru</td><td>a II-a</td><td>Școala Gimnazială „Axente Sever" Aiud</td><td>Alba</td><td>Truța Anamaria</td><td><span class="badge badge-iii">Premiul III</span></td></tr>
+            <tr><td>4</td><td>Javla Patricia, Popa Ariana, Olelei Sara, Dehelean Georgiana, Gherghel Camelia</td><td>a II-a</td><td>Colegiul Tehnic „Apulum" Alba-Iulia</td><td>Alba</td><td>Curta Andreea Lucia, Petruț Georgeta</td><td><span class="badge badge-m">Mențiune</span></td></tr>
+            <tr><td>5</td><td>Moldovan Zian</td><td>a II-a</td><td>Școala Gimnazială „Axente Sever" Aiud</td><td>Alba</td><td>Ciortea Ștefania Liana</td><td><span class="badge badge-m">Mențiune</span></td></tr>
+            <tr><td>6</td><td>Hojda Antonia</td><td>a II-a</td><td>Clubul Copiilor Vișeu de Sus</td><td>Maramureș</td><td>Șimon Adelina</td><td><span class="badge badge-p">Participare</span></td></tr>
+            <tr><td>7</td><td>Strava Raisa</td><td>a II-a</td><td>Palatul Copiilor Satu Mare</td><td>Satu Mare</td><td>Szemak Zsuzsa</td><td><span class="badge badge-p">Participare</span></td></tr>
+            <tr><td>8</td><td>Badea Bogdan</td><td>a II-a</td><td>Liceul Special „Sfânta Maria" Călărași</td><td>Călărași</td><td>Stroescu Liliana Simona</td><td><span class="badge badge-p">Participare</span></td></tr>
+            <tr><td>9</td><td>Ivanciu Narcis</td><td>a II-a</td><td>Liceul Special „Sfânta Maria" Călărași</td><td>Călărași</td><td>Stroescu Liliana Simona</td><td><span class="badge badge-p">Participare</span></td></tr>
+            <tr><td>10</td><td>Cojocaru David</td><td>a II-a</td><td>Liceul Special „Sfânta Maria" Călărași</td><td>Călărași</td><td>Cangea Monica</td><td><span class="badge badge-p">Participare</span></td></tr>
+            <tr><td>11</td><td>Bilan Yanis</td><td>a II-a</td><td>Liceul Special „Sfânta Maria" Călărași</td><td>Călărași</td><td>Cangea Monica</td><td><span class="badge badge-p">Participare</span></td></tr>
+            <tr><td>12</td><td>Suliman Sinem</td><td>a II-a</td><td>Clubul Copiilor Hârșova – Cercul de Horticultura</td><td>Constanța</td><td>Tudor Mihaela Mirela</td><td><span class="badge badge-p">Participare</span></td></tr>
+            <tr><td>13</td><td>Îngustu Daria</td><td>a II-a</td><td>Palatul Copiilor Orăștie</td><td>Hunedoara</td><td>Furdui Alina</td><td><span class="badge badge-p">Participare</span></td></tr>
+            <tr><td>14</td><td>Irimie Loredana</td><td>a II-a</td><td>Școala Gimnazială „Axente Sever" Aiud</td><td>Alba</td><td>Ciortea Ștefania Liana</td><td><span class="badge badge-p">Participare</span></td></tr>
+            <tr><td>15</td><td>Popescu Daria</td><td>a II-a</td><td>Școala Gimnazială „Axente Sever" Aiud</td><td>Alba</td><td>Ciortea Ștefania Liana</td><td><span class="badge badge-p">Participare</span></td></tr>
+            <tr><td>16</td><td>Mate Anais</td><td>a II-a</td><td>Școala Gimnazială „Axente Sever" Aiud</td><td>Alba</td><td>Ciortea Ștefania Liana</td><td><span class="badge badge-p">Participare</span></td></tr>
+            <tr><td>17</td><td>Selegean Ștefania</td><td>a II-a</td><td>Școala Gimnazială „Axente Sever" Aiud</td><td>Alba</td><td>Truța Anamaria</td><td><span class="badge badge-p">Participare</span></td></tr>
+            <tr><td>18</td><td>Popa Flavia</td><td>a II-a</td><td>Școala Gimnazială „Axente Sever" Aiud</td><td>Alba</td><td>Truța Anamaria</td><td><span class="badge badge-p">Participare</span></td></tr>
+            <tr><td>19</td><td>Barta Raul</td><td>a II-a</td><td>Școala Gimnazială „Axente Sever" Aiud</td><td>Alba</td><td>Truța Anamaria</td><td><span class="badge badge-p">Participare</span></td></tr>
+            <tr><td>20</td><td>Năsăudean Sabina</td><td>a II-a</td><td>Palatul Copiilor Târgu Mureș</td><td>Mureș</td><td>Sabău Corina</td><td><span class="badge badge-p">Participare</span></td></tr>
+            <tr><td>21</td><td>Alexandru Elena Cătălina</td><td>a III-a</td><td>Palatul Copiilor Slobozia</td><td>Ialomița</td><td>Paraschiv Marina</td><td><span class="badge badge-i">Premiul I</span></td></tr>
+            <tr><td>22</td><td>Stoica Alexandra</td><td>a III-a</td><td>Palatul Copiilor Orăștie</td><td>Hunedoara</td><td>Furdui Alina</td><td><span class="badge badge-ii">Premiul II</span></td></tr>
+            <tr><td>23</td><td>Creț Andreea Adelina</td><td>a III-a</td><td>Școala Gimnazială „Vasile Goldiș" Alba Iulia</td><td>Mureș</td><td>Trip Bianca</td><td><span class="badge badge-iii">Premiul III</span></td></tr>
+            <tr><td>24</td><td>Furdui Carla</td><td>a III-a</td><td>Școala Gimnazială Câmpeni</td><td>Alba</td><td>Marc Aurica</td><td><span class="badge badge-m">Mențiune</span></td></tr>
+            <tr><td>25</td><td>Petricele Irina</td><td>a III-a</td><td>Școala Gimnazială Câmpeni</td><td>Alba</td><td>Marc Aurica</td><td><span class="badge badge-m">Mențiune</span></td></tr>
+            <tr><td>26</td><td>Laza Amadeea</td><td>a III-a</td><td>Palatul Copiilor Satu Mare</td><td>Satu Mare</td><td>Szemak Zsuzsa</td><td><span class="badge badge-p">Participare</span></td></tr>
+            <tr><td>27</td><td>Vesa Paul</td><td>a III-a</td><td>Școala Gimnazială Câmpeni</td><td>Alba</td><td>Marc Aurica</td><td><span class="badge badge-p">Participare</span></td></tr>
+            <tr><td>28</td><td>Morar Simona</td><td>a III-a</td><td>Școala Gimnazială Câmpeni</td><td>Alba</td><td>Marc Aurica</td><td><span class="badge badge-p">Participare</span></td></tr>
+            <tr><td>29</td><td>Mariș Raisa, Sicoie Maya, Roman Sofia, Bacci Carla Nicoleta, Blăjan Rut Maria</td><td>a III-a</td><td>Colegiul Tehnic „Apulum" Alba-Iulia</td><td>Alba</td><td>Leaș Camelia, Todea Adriana</td><td><span class="badge badge-p">Participare</span></td></tr>
+            <tr><td>30</td><td>Târziu Ovidiu Andrei</td><td>a III-a</td><td>Palatul Copiilor Orăștie</td><td>Hunedoara</td><td>Furdui Alina</td><td><span class="badge badge-p">Participare</span></td></tr>
+            <tr><td>31</td><td>Timofti Natasa-Elena</td><td>a III-a</td><td>Palatul Copiilor Orăștie</td><td>Hunedoara</td><td>Furdui Alina</td><td><span class="badge badge-p">Participare</span></td></tr>
+            <tr><td>32</td><td>Hapca Ioana</td><td>a III-a</td><td>Clubul Copiilor Vișeu de Sus</td><td>Maramureș</td><td>Șimon Adelina</td><td><span class="badge badge-p">Participare</span></td></tr>
+            <tr><td>33</td><td>Popovici Victor</td><td>a III-a</td><td>Școala Gimnazială „Vasile Goldiș" Alba Iulia</td><td>Mureș</td><td>Trip Bianca</td><td><span class="badge badge-p">Participare</span></td></tr>
+            <tr><td>34</td><td>Șerban Amalia</td><td>a III-a</td><td>Școala Gimnazială „Vasile Goldiș" Alba Iulia</td><td>Mureș</td><td>Trip Bianca</td><td><span class="badge badge-p">Participare</span></td></tr>
+            <tr><td>35</td><td>Criste Ema</td><td>a III-a</td><td>Școala Gimnazială „Vasile Goldiș" Alba Iulia</td><td>Mureș</td><td>Trip Bianca</td><td><span class="badge badge-p">Participare</span></td></tr>
+            <tr><td>36</td><td>Burdulean Noemi Victoria</td><td>a III-a</td><td>Școala Gimnazială „Vasile Goldiș" Alba Iulia</td><td>Mureș</td><td>Trip Bianca</td><td><span class="badge badge-p">Participare</span></td></tr>
+            <tr><td>37</td><td>Cătană Diana Andreea, Văsuț Ioana Meda, Oprea Ianis Matei</td><td>a IV-a</td><td>Colegiul Tehnic „Apulum" Alba-Iulia</td><td>Alba</td><td>Cunțan Mariana, Popa Alexandra</td><td><span class="badge badge-i">Premiul I</span></td></tr>
+            <tr><td>38</td><td>David Lorena, Mezei Iarina Raluca, Giurca Delia Ioana</td><td>a IV-a</td><td>Colegiul Tehnic „Apulum" Alba-Iulia</td><td>Alba</td><td>Florea Alexandra, Jurcan Elena Mihaela</td><td><span class="badge badge-iii">Premiul III</span></td></tr>
+            <tr><td>39</td><td>Mihali Daria</td><td>a IV-a</td><td>Clubul Copiilor Vișeu de Sus</td><td>Maramureș</td><td>Șimon Adelina</td><td><span class="badge badge-m">Mențiune</span></td></tr>
+            <tr><td>40</td><td>Guțeniuc David</td><td>a IV-a</td><td>Clubul Copiilor Vișeu de Sus</td><td>Maramureș</td><td>Șimon Adelina</td><td><span class="badge badge-p">Participare</span></td></tr>
+            <tr><td>41</td><td>Chinci Calia</td><td>a IV-a</td><td>Palatul Copiilor Târgu Mureș</td><td>Mureș</td><td>Sabău Corina</td><td><span class="badge badge-ii">Premiul II</span></td></tr>
+            <tr><td>42</td><td>Botea Andreea Gabriela</td><td>a IX-a</td><td>Clubul Copiilor Hârșova – Cercul de Horticultura</td><td>Constanța</td><td>Tudor Mihaela Mirela</td><td><span class="badge badge-i">Premiul I</span></td></tr>
+            <tr><td>43</td><td>Iancu Ionuț Gabriel</td><td>a IX-a</td><td>Liceul „Corneliu Medrea" Zlatna</td><td>Alba</td><td>Rusan Mirela</td><td><span class="badge badge-ii">Premiul II</span></td></tr>
+            <tr><td>44</td><td>Stanciu Alexandru</td><td>a IX-a</td><td>Liceul Teoretic „G. Vâlsan" Făurei</td><td>Brăila</td><td>Geanina Mădălina Ștefan, Done Mariana</td><td><span class="badge badge-iii">Premiul III</span></td></tr>
+            <tr><td>45</td><td>Matei Geanina Alexandra</td><td>a IX-a</td><td>Colegiul Economic „Ion Ghica" Brăila</td><td>Brăila</td><td>Tătăreanu Simona Gianina</td><td><span class="badge badge-m">Mențiune</span></td></tr>
+            <tr><td>46</td><td>Gheorghe Lidia Teodora</td><td>a IX-a</td><td>Colegiul Economic „Ion Ghica" Brăila</td><td>Brăila</td><td>Lepădatu Daniel</td><td><span class="badge badge-m">Mențiune</span></td></tr>
+            <tr><td>47</td><td>Alexandru Ionuț</td><td>a IX-a</td><td>Liceul Special „Sfânta Maria" Călărași</td><td>Călărași</td><td>Rădan Maria</td><td><span class="badge badge-p">Participare</span></td></tr>
+            <tr><td>48</td><td>Călin Alexandra</td><td>a IX-a</td><td>Liceul Special „Sfânta Maria" Călărași</td><td>Călărași</td><td>Rădan Maria</td><td><span class="badge badge-p">Participare</span></td></tr>
+            <tr><td>49</td><td>Iordache Ionuț</td><td>a IX-a</td><td>Liceul Special „Sfânta Maria" Călărași</td><td>Călărași</td><td>Rădan Maria</td><td><span class="badge badge-p">Participare</span></td></tr>
+            <tr><td>50</td><td>Crișan Tudor Gheorghe</td><td>a IX-a</td><td>Liceul „Corneliu Medrea" Zlatna</td><td>Alba</td><td>Rusan Mirela</td><td><span class="badge badge-p">Participare</span></td></tr>
+            <tr><td>51</td><td>Renghea Daria</td><td>a IX-a</td><td>Colegiul Tehnic „Viceamiral Ioan Bălănescu" Giurgiu</td><td>Giurgiu</td><td>Marin Daniela</td><td><span class="badge badge-p">Participare</span></td></tr>
+            <tr><td>52</td><td>Ciucă Claudiu Mihai</td><td>a IX-a</td><td>Colegiul Economic „Ion Ghica" Brăila</td><td>Brăila</td><td>Feichter Narcisa Liliana</td><td><span class="badge badge-p">Participare</span></td></tr>
+            <tr><td>53</td><td>Paraleu Ana-Maria</td><td>a IX-a</td><td>Colegiul Economic „Ion Ghica" Brăila</td><td>Brăila</td><td>Tătăreanu Simona Gianina</td><td><span class="badge badge-p">Participare</span></td></tr>
+            <tr><td>54</td><td>Paraleu Ana-Maria</td><td>a IX-a</td><td>Colegiul Economic „Ion Ghica" Brăila</td><td>Brăila</td><td>Berechet Steluța Claudia</td><td><span class="badge badge-p">Participare</span></td></tr>
+            <tr><td>55</td><td>Pintilii Maria</td><td>a IX-a</td><td>Colegiul Economic „Ion Ghica" Brăila</td><td>Brăila</td><td>Maraloiu Pompilia</td><td><span class="badge badge-p">Participare</span></td></tr>
+            <tr><td>56</td><td>Paraschiv Denisa</td><td>a IX-a</td><td>Liceul Teoretic „G. Vâlsan" Făurei</td><td>Brăila</td><td>Geanina Mădălina Ștefan, Done Mariana</td><td><span class="badge badge-p">Participare</span></td></tr>
+            <tr><td>57</td><td>Bunea Ștefania</td><td>a IX-a</td><td>Liceul Teoretic „G. Vâlsan" Făurei</td><td>Brăila</td><td>Geanina Mădălina Ștefan, Done Mariana</td><td><span class="badge badge-p">Participare</span></td></tr>
+            <tr><td>58</td><td>Androne Roxana</td><td>a IX-a</td><td>Liceul Teoretic „G. Vâlsan" Făurei</td><td>Brăila</td><td>Geanina Mădălina Ștefan, Done Mariana</td><td><span class="badge badge-p">Participare</span></td></tr>
+            <tr><td>59</td><td>Popa Ștefania</td><td>a V-a</td><td>Școala Gimnazială Bordei Verde</td><td>Brăila</td><td>Oprea Tudorița</td><td><span class="badge badge-i">Premiul I</span></td></tr>
+            <tr><td>60</td><td>Gabona Virag Teodora</td><td>a V-a</td><td>Palatul Copiilor Satu Mare</td><td>Satu Mare</td><td>Szemak Zsuzsa</td><td><span class="badge badge-ii">Premiul II</span></td></tr>
+            <tr><td>61</td><td>Mateiu Daria</td><td>a V-a</td><td>Școala Gimnazială „Traian" Târnăveni</td><td>Mureș</td><td>Ignat Maria Claudia</td><td><span class="badge badge-iii">Premiul III</span></td></tr>
+            <tr><td>62</td><td>Lăcătuș Petru Albert</td><td>a V-a</td><td>Școala Gimnazială nr.1 Bolintin-Vale</td><td>Giurgiu</td><td>Pencu Cătălin</td><td><span class="badge badge-m">Mențiune</span></td></tr>
+            <tr><td>63</td><td>Căpățână Andrei Alberto</td><td>a V-a</td><td>Colegiul Național Pedagogic „Spiru Haret" Buzău</td><td>Buzău</td><td>Tănase Adina Mădălina</td><td><span class="badge badge-m">Mențiune</span></td></tr>
+            <tr><td>64</td><td>Șuvițeanu Maria-Teodora</td><td>a V-a</td><td>Colegiul Național Pedagogic „Spiru Haret" Buzău</td><td>Buzău</td><td>Tănase Adina Mădălina</td><td><span class="badge badge-m">Mențiune</span></td></tr>
+            <tr><td>65</td><td>Voinea Maria-Teodora</td><td>a V-a</td><td>Colegiul Național Pedagogic „Spiru Haret" Buzău</td><td>Buzău</td><td>Tănase Adina Mădălina</td><td><span class="badge badge-m">Mențiune</span></td></tr>
+            <tr><td>66</td><td>Goață Florentina</td><td>a V-a</td><td>Școala Gimnazială „Episcop Dionisie Romano" Buzău</td><td>Buzău</td><td>Gheorghiu Andreea Veronica</td><td><span class="badge badge-m">Mențiune</span></td></tr>
+            <tr><td>67</td><td>Ghiță Eliza Ștefania</td><td>a V-a</td><td>Școala Gimnazială „Episcop Dionisie Romano" Buzău</td><td>Buzău</td><td>Gheorghiu Andreea Veronica</td><td><span class="badge badge-p">Participare</span></td></tr>
+            <tr><td>68</td><td>Dan Cătălina</td><td>a V-a</td><td>Școala Gimnazială „Mihai Eminescu" Ighiu</td><td>Alba</td><td>Elida Angela Ana</td><td><span class="badge badge-p">Participare</span></td></tr>
+            <tr><td>69</td><td>Girardi Christopher</td><td>a V-a</td><td>Școala Gimnazială Câlnic</td><td>Alba</td><td>Elida Angela Ana</td><td><span class="badge badge-p">Participare</span></td></tr>
+            <tr><td>70</td><td>Tănase Boldianu Luca Florian</td><td>a V-a</td><td>Școala Gimnazială nr. 2 Dor-Mărunt Gară</td><td>Călărași</td><td>Paidel Cristina</td><td><span class="badge badge-p">Participare</span></td></tr>
+            <tr><td>71</td><td>Moca Mihaela</td><td>a V-a</td><td>Școala Gimnazială Bordei Verde</td><td>Brăila</td><td>Oprea Tudorița</td><td><span class="badge badge-p">Participare</span></td></tr>
+            <tr><td>72</td><td>Săraru Alexandru Ioan</td><td>a V-a</td><td>Școala Gimnazială nr.1 Bolintin-Vale</td><td>Giurgiu</td><td>Pencu Cătălin</td><td><span class="badge badge-p">Participare</span></td></tr>
+            <tr><td>73</td><td>Bogzoiu Rareș Gabriel</td><td>a V-a</td><td>Colegiul Național Pedagogic „Spiru Haret" Buzău</td><td>Buzău</td><td>Tănase Adina Mădălina</td><td><span class="badge badge-p">Participare</span></td></tr>
+            <tr><td>74</td><td>Corbu Melisa Andreea</td><td>a V-a</td><td>Colegiul Național Pedagogic „Spiru Haret" Buzău</td><td>Buzău</td><td>Tănase Adina Mădălina</td><td><span class="badge badge-p">Participare</span></td></tr>
+            <tr><td>75</td><td>Mihalache Andrei</td><td>a V-a</td><td>Colegiul Național Pedagogic „Spiru Haret" Buzău</td><td>Buzău</td><td>Tănase Adina Mădălina</td><td><span class="badge badge-p">Participare</span></td></tr>
+            <tr><td>76</td><td>Mihalcea Maria</td><td>a V-a</td><td>Colegiul Național Pedagogic „Spiru Haret" Buzău</td><td>Buzău</td><td>Tănase Adina Mădălina</td><td><span class="badge badge-p">Participare</span></td></tr>
+            <tr><td>77</td><td>Scornici Ioana-Cătălina</td><td>a V-a</td><td>Colegiul Național Pedagogic „Spiru Haret" Buzău</td><td>Buzău</td><td>Tănase Adina Mădălina</td><td><span class="badge badge-p">Participare</span></td></tr>
+            <tr><td>78</td><td>Stanciu Alexia-Georgiana</td><td>a V-a</td><td>Colegiul Național Pedagogic „Spiru Haret" Buzău</td><td>Buzău</td><td>Tănase Adina Mădălina</td><td><span class="badge badge-p">Participare</span></td></tr>
+            <tr><td>79</td><td>Vișinescu Rareș Mihai</td><td>a V-a</td><td>Școala Gimnazială „Episcop Dionisie Romano" Buzău</td><td>Buzău</td><td>Gheorghiu Andreea Veronica</td><td><span class="badge badge-p">Participare</span></td></tr>
+            <tr><td>80</td><td>Tudor Sofia Andreea</td><td>a V-a</td><td>Școala Gimnazială „Episcop Dionisie Romano" Buzău</td><td>Buzău</td><td>Gheorghiu Andreea Veronica</td><td><span class="badge badge-p">Participare</span></td></tr>
+            <tr><td>81</td><td>Andrei Erika Elena</td><td>a V-a</td><td>Școala Gimnazială „Episcop Dionisie Romano" Buzău</td><td>Buzău</td><td>Gheorghiu Andreea Veronica</td><td><span class="badge badge-p">Participare</span></td></tr>
+            <tr><td>82</td><td>Marica Flavius Cosmin</td><td>a V-a</td><td>Școala Gimnazială „Mihai Eminescu" Ighiu</td><td>Alba</td><td>Elida Angela Ana</td><td><span class="badge badge-p">Participare</span></td></tr>
+            <tr><td>83</td><td>Truța Naomi</td><td>a V-a</td><td>Școala Gimnazială „Mihai Eminescu" Ighiu</td><td>Alba</td><td>Elida Angela Ana</td><td><span class="badge badge-p">Participare</span></td></tr>
+            <tr><td>84</td><td>Furdui Casiana Maria</td><td>a V-a</td><td>Școala Gimnazială Câlnic</td><td>Alba</td><td>Elida Angela Ana</td><td><span class="badge badge-p">Participare</span></td></tr>
+            <tr><td>85</td><td>Nica Mario-Mihail</td><td>a V-a</td><td>Școala Gimnazială nr. 2 Dor-Mărunt Gară</td><td>Călărași</td><td>Paidel Cristina</td><td><span class="badge badge-p">Participare</span></td></tr>
+            <tr><td>86</td><td>Gheorghe Andreea Maria</td><td>a V-a</td><td>Școala Gimnazială nr. 2 Dor-Mărunt Gară</td><td>Călărași</td><td>Paidel Cristina</td><td><span class="badge badge-p">Participare</span></td></tr>
+            <tr><td>87</td><td>Pântea Antonia</td><td>a V-a</td><td>Școala Gimnazială Bordei Verde</td><td>Brăila</td><td>Oprea Tudorița</td><td><span class="badge badge-p">Participare</span></td></tr>
+            <tr><td>88</td><td>Nazâru Daria</td><td>a V-a</td><td>Școala Gimnazială Bordei Verde</td><td>Brăila</td><td>Oprea Tudorița</td><td><span class="badge badge-p">Participare</span></td></tr>
+            <tr><td>89</td><td>Radu Irina</td><td>a V-a</td><td>Școala Gimnazială Bordei Verde</td><td>Brăila</td><td>Oprea Tudorița</td><td><span class="badge badge-p">Participare</span></td></tr>
+            <tr><td>90</td><td>Macovei Petru Rareș</td><td>a V-a</td><td>Școala Gimnazială „Dimitrie Sturdza" Tecuci</td><td>Galați</td><td>Gabor Raluca</td><td><span class="badge badge-p">Participare</span></td></tr>
+            <tr><td>91</td><td>Condrache Emma</td><td>a V-a</td><td>Școala Gimnazială „Dimitrie Sturdza" Tecuci</td><td>Galați</td><td>Gabor Raluca</td><td><span class="badge badge-p">Participare</span></td></tr>
+            <tr><td>92</td><td>Dănilă Ștefan</td><td>a V-a</td><td>Școala Gimnazială „Dimitrie Sturdza" Tecuci</td><td>Galați</td><td>Gabor Raluca</td><td><span class="badge badge-p">Participare</span></td></tr>
+            <tr><td>93</td><td>Filimon Antonia</td><td>a V-a</td><td>Școala Gimnazială „Dimitrie Sturdza" Tecuci</td><td>Galați</td><td>Gabor Raluca</td><td><span class="badge badge-p">Participare</span></td></tr>
+            <tr><td>94</td><td>Radu Raluca Ioana</td><td>a VI-a</td><td>Școala Gimnazială nr.1 Bolintin-Vale</td><td>Giurgiu</td><td>Pencu Cătălin</td><td><span class="badge badge-i">Premiul I</span></td></tr>
+            <tr><td>95</td><td>Camențu Alesia Ștefania, Stoican Miruna, Toader Cristina Theodora</td><td>a VI-a</td><td>Școala Profesională Viziru</td><td>Brăila</td><td>Rusu Simona</td><td><span class="badge badge-ii">Premiul II</span></td></tr>
+            <tr><td>96</td><td>Bucioc Iulia</td><td>a VI-a</td><td>Școala Gimnazială „A. S. Puskin" Brăila</td><td>Brăila</td><td>Mircea Iulian</td><td><span class="badge badge-iii">Premiul III</span></td></tr>
+            <tr><td>97</td><td>Pricop Denisa Ana-Maria, Rădan Ioana Amalia</td><td>a VI-a</td><td>Școala Gimnazială „Ion Luca Caragiale" Tulcea</td><td>Tulcea</td><td>Șchiopu Adina</td><td><span class="badge badge-m">Mențiune</span></td></tr>
+            <tr><td>98</td><td>Vasiliev Maria</td><td>a VI-a</td><td>Școala Gimnazială „Nedelcu Chercea" Brăila</td><td>Brăila</td><td>Mircea Iulian</td><td><span class="badge badge-m">Mențiune</span></td></tr>
+            <tr><td>99</td><td>Danilik Sofia</td><td>a VI-a</td><td>Școala Gimnazială „A. S. Puskin" Brăila</td><td>Brăila</td><td>Mircea Iulian</td><td><span class="badge badge-m">Mențiune</span></td></tr>
+            <tr><td>100</td><td>Balea Mihaela</td><td>a VI-a</td><td>Liceul Special „Sfânta Maria" Călărași</td><td>Călărași</td><td>Vicu Nadia</td><td><span class="badge badge-p">Participare</span></td></tr>
+            <tr><td>101</td><td>Toma Ionuț</td><td>a VI-a</td><td>Liceul Tehnologic Special nr. 1 Oradea</td><td>Bihor</td><td>Popovici Camelia</td><td><span class="badge badge-p">Participare</span></td></tr>
+            <tr><td>102</td><td>Muscă Adelina Ștefania</td><td>a VI-a</td><td>Școala Gimnazială „Florea Julea" Negrilești</td><td>Galați</td><td>Aevoaei Măndica</td><td><span class="badge badge-p">Participare</span></td></tr>
+            <tr><td>103</td><td>Lupu Aida-Maria</td><td>a VI-a</td><td>Școala Gimnazială nr. 1 Putineiu</td><td>Giurgiu</td><td>Berbec Emilia-Petruța</td><td><span class="badge badge-p">Participare</span></td></tr>
+            <tr><td>104</td><td>Furdui Maria Alexandra</td><td>a VI-a</td><td>Palatul Copiilor Orăștie</td><td>Hunedoara</td><td>Furdui Alina</td><td><span class="badge badge-p">Participare</span></td></tr>
+            <tr><td>105</td><td>Beldiman Maria Cristina, Suhov Amalia Andreea</td><td>a VI-a</td><td>Școala Gimnazială „Ion Luca Caragiale" Tulcea</td><td>Tulcea</td><td>Șchiopu Adina</td><td><span class="badge badge-p">Participare</span></td></tr>
+            <tr><td>106</td><td>Barbu Marian</td><td>a VI-a</td><td>Liceul Special „Sfânta Maria" Călărași</td><td>Călărași</td><td>Andrei Mihaela</td><td><span class="badge badge-p">Participare</span></td></tr>
+            <tr><td>107</td><td>Picu Georgiana</td><td>a VI-a</td><td>Liceul Special „Sfânta Maria" Călărași</td><td>Călărași</td><td>Brașoveanu Cristina Ioana</td><td><span class="badge badge-p">Participare</span></td></tr>
+            <tr><td>108</td><td>Petra Denisa</td><td>a VI-a</td><td>Liceul Special „Sfânta Maria" Călărași</td><td>Călărași</td><td>Vicu Nadia</td><td><span class="badge badge-p">Participare</span></td></tr>
+            <tr><td>109</td><td>Dinu Maria Mihaela</td><td>a VI-a</td><td>Școala Gimnazială nr.1 Bolintin-Vale</td><td>Giurgiu</td><td>Pencu Cătălin</td><td><span class="badge badge-p">Participare</span></td></tr>
+            <tr><td>110</td><td>Lăcătuș Marian</td><td>a VI-a</td><td>Liceul Tehnologic Special nr. 1 Oradea</td><td>Bihor</td><td>Popovici Camelia</td><td><span class="badge badge-p">Participare</span></td></tr>
+            <tr><td>111</td><td>Ventel Denisa</td><td>a VI-a</td><td>Liceul Tehnologic Special nr. 1 Oradea</td><td>Bihor</td><td>Popovici Camelia</td><td><span class="badge badge-p">Participare</span></td></tr>
+            <tr><td>112</td><td>Mușat Angela Matilde</td><td>a VI-a</td><td>Școala Gimnazială nr. 2 Dor-Mărunt Gară</td><td>Călărași</td><td>Paidel Cristina</td><td><span class="badge badge-p">Participare</span></td></tr>
+            <tr><td>113</td><td>Bălan Andreea Mădălina</td><td>a VI-a</td><td>Școala Gimnazială „Florea Julea" Negrilești</td><td>Galați</td><td>Aevoaei Măndica</td><td><span class="badge badge-p">Participare</span></td></tr>
+            <tr><td>114</td><td>Ciucă Daria Maria</td><td>a VI-a</td><td>Școala Gimnazială nr. 1 Putineiu</td><td>Giurgiu</td><td>Berbec Emilia-Petruța</td><td><span class="badge badge-p">Participare</span></td></tr>
+            <tr><td>115</td><td>Pocan Lavinia</td><td>a VII-a</td><td>Școala Gimnazială „Traian" Târnăveni</td><td>Mureș</td><td>Ignat Maria Claudia</td><td><span class="badge badge-i">Premiul I</span></td></tr>
+            <tr><td>116</td><td>Bălțat Anișoara Florentina, Bordeianu Nicoleta Alexandra, Codreanu Alin, Cristian Andrei, Custura Mariana Ionela</td><td>a VII-a</td><td>Școala Profesională Viziru</td><td>Brăila</td><td>Rusu Simona</td><td><span class="badge badge-ii">Premiul II</span></td></tr>
+            <tr><td>117</td><td>Marin Bianca Teodora</td><td>a VII-a</td><td>Școala Gimnazială „Florea Julea" Negrilești</td><td>Galați</td><td>Aevoaei Măndica</td><td><span class="badge badge-iii">Premiul III</span></td></tr>
+            <tr><td>118</td><td>Iuseim Selena Aigean</td><td>a VII-a</td><td>Liceul Special „Sfânta Maria" Călărași</td><td>Călărași</td><td>Grigoruță Ana Maria</td><td><span class="badge badge-m">Mențiune</span></td></tr>
+            <tr><td>119</td><td>Lupu Nicolas Mihai</td><td>a VII-a</td><td>Școala Gimnazială „Florea Julea" Negrilești</td><td>Galați</td><td>Aevoaei Măndica</td><td><span class="badge badge-m">Mențiune</span></td></tr>
+            <tr><td>120</td><td>Chițu Ștefan</td><td>a VII-a</td><td>Liceul Special „Sfânta Maria" Călărași</td><td>Călărași</td><td>Mihai Marilena</td><td><span class="badge badge-p">Participare</span></td></tr>
+            <tr><td>121</td><td>Fiorentino Ilaria</td><td>a VII-a</td><td>Liceul Special „Sfânta Maria" Călărași</td><td>Călărași</td><td>Mihai Marilena</td><td><span class="badge badge-p">Participare</span></td></tr>
+            <tr><td>122</td><td>Balea Marian</td><td>a VII-a</td><td>Liceul Special „Sfânta Maria" Călărași</td><td>Călărași</td><td>Grigoruță Ana Maria</td><td><span class="badge badge-p">Participare</span></td></tr>
+            <tr><td>123</td><td>Zanfir Gabriela Miriam</td><td>a VII-a</td><td>Școala Gimnazială nr.1 Bolintin-Vale</td><td>Giurgiu</td><td>Pencu Cătălin</td><td><span class="badge badge-p">Participare</span></td></tr>
+            <tr><td>124</td><td>Necăjitu Rebeca Ștefania</td><td>a VII-a</td><td>Școala Gimnazială nr.1 Bolintin-Vale</td><td>Giurgiu</td><td>Pencu Cătălin</td><td><span class="badge badge-p">Participare</span></td></tr>
+            <tr><td>125</td><td>Bîrsan Selena Maria</td><td>a VII-a</td><td>Școala Gimnazială Câlnic</td><td>Alba</td><td>Elida Angela Ana</td><td><span class="badge badge-p">Participare</span></td></tr>
+            <tr><td>126</td><td>Poenescu Alexandra Iuliana</td><td>a VII-a</td><td>Școala Gimnazială „Florea Julea" Negrilești</td><td>Galați</td><td>Turculeț Violeta</td><td><span class="badge badge-p">Participare</span></td></tr>
+            <tr><td>127</td><td>Carp Daria Andreea</td><td>a VII-a</td><td>Școala Gimnazială „Florea Julea" Negrilești</td><td>Galați</td><td>Turculeț Violeta</td><td><span class="badge badge-p">Participare</span></td></tr>
+            <tr><td>128</td><td>Morozan Elisabeta Ionica</td><td>a VII-a</td><td>Școala Gimnazială „Florea Julea" Negrilești</td><td>Galați</td><td>Turculeț Violeta</td><td><span class="badge badge-p">Participare</span></td></tr>
+            <tr><td>129</td><td>Pisău Roxana</td><td>a VIII-a</td><td>Colegiul Tehnic „Apulum" Alba-Iulia</td><td>Alba</td><td>Dăescu Nicoleta</td><td><span class="badge badge-i">Premiul I</span></td></tr>
+            <tr><td>130</td><td>Priporan Patricia</td><td>a VIII-a</td><td>Colegiul Tehnic „Apulum" Alba-Iulia</td><td>Alba</td><td>Cunțan Mariana</td><td><span class="badge badge-ii">Premiul II</span></td></tr>
+            <tr><td>131</td><td>Dreghiciu Sonia Iasmina</td><td>a VIII-a</td><td>Colegiul Tehnic „Apulum" Alba-Iulia</td><td>Alba</td><td>Jurcan Elena Mihaela</td><td><span class="badge badge-p">Participare</span></td></tr>
+            <tr><td>132</td><td>Nițu Robert Ionuț</td><td>a VIII-a</td><td>Școala Gimnazială „Florea Julea" Negrilești</td><td>Galați</td><td>Turculeț Violeta</td><td><span class="badge badge-m">Mențiune</span></td></tr>
+            <tr><td>133</td><td>Mîncilă Adrian</td><td>a VIII-a</td><td>Școala Gimnazială „Florea Julea" Negrilești</td><td>Galați</td><td>Turculeț Violeta</td><td><span class="badge badge-iii">Premiul III</span></td></tr>
+            <tr><td>134</td><td>Toderașcu Marius Ionuț</td><td>a VIII-a</td><td>Școala Gimnazială „Florea Julea" Negrilești</td><td>Galați</td><td>Aevoaei Măndica</td><td><span class="badge badge-m">Mențiune</span></td></tr>
+            <tr><td>135</td><td>Gerea Maria-Emilia</td><td>a X-a</td><td>Colegiul Național Pedagogic „D. P. Perpessicius" Brăila</td><td>Brăila</td><td>Aldea Carmen-Lăcrămioara</td><td><span class="badge badge-i">Premiul I</span></td></tr>
+            <tr><td>136</td><td>Alexandru Cleopatra-Maria</td><td>a X-a</td><td>Colegiul Național Pedagogic „D. P. Perpessicius" Brăila</td><td>Brăila</td><td>Aldea Carmen-Lăcrămioara</td><td><span class="badge badge-ii">Premiul II</span></td></tr>
+            <tr><td>137</td><td>Barangă Lavinia</td><td>a X-a</td><td>Liceul Teoretic „G. Vâlsan" Făurei</td><td>Brăila</td><td>Geanina Mădălina Ștefan, Done Mariana</td><td><span class="badge badge-iii">Premiul III</span></td></tr>
+            <tr><td>138</td><td>Iaba Ioana-Loriana</td><td>a X-a</td><td>Colegiul Național Pedagogic „D. P. Perpessicius" Brăila</td><td>Brăila</td><td>Aldea Carmen-Lăcrămioara</td><td><span class="badge badge-m">Mențiune</span></td></tr>
+            <tr><td>139</td><td>Neagoe Nicușor</td><td>a X-a</td><td>Liceul Teoretic „G. Vâlsan" Făurei</td><td>Brăila</td><td>Geanina Mădălina Ștefan, Done Mariana</td><td><span class="badge badge-m">Mențiune</span></td></tr>
+            <tr><td>140</td><td>Dateș Mario Ionuț Eduard</td><td>a X-a</td><td>Colegiul Economic „Ion Ghica" Brăila</td><td>Brăila</td><td>Hurtoi Mihaiela</td><td><span class="badge badge-p">Participare</span></td></tr>
+            <tr><td>141</td><td>Matei Gabriela</td><td>a X-a</td><td>Colegiul Economic „Ion Ghica" Brăila</td><td>Brăila</td><td>Streche Antoneta</td><td><span class="badge badge-p">Participare</span></td></tr>
+            <tr><td>142</td><td>Bogdan Georgian Mario</td><td>a X-a</td><td>Colegiul Economic „Ion Ghica" Brăila</td><td>Brăila</td><td>Poli Elena</td><td><span class="badge badge-p">Participare</span></td></tr>
+            <tr><td>143</td><td>Șerban Cosmina-Miruna</td><td>a X-a</td><td>Colegiul Național Pedagogic „D. P. Perpessicius" Brăila</td><td>Brăila</td><td>Aldea Carmen-Lăcrămioara</td><td><span class="badge badge-p">Participare</span></td></tr>
+            <tr><td>144</td><td>Stan Larisa-Maria</td><td>a X-a</td><td>Colegiul Național Pedagogic „D. P. Perpessicius" Brăila</td><td>Brăila</td><td>Aldea Carmen-Lăcrămioara</td><td><span class="badge badge-p">Participare</span></td></tr>
+            <tr><td>145</td><td>Grecu Anamaria</td><td>a X-a</td><td>Liceul Teoretic „G. Vâlsan" Făurei</td><td>Brăila</td><td>Geanina Mădălina Ștefan, Done Mariana</td><td><span class="badge badge-p">Participare</span></td></tr>
+            <tr><td>146</td><td>Pîslaru Cosmin</td><td>a X-a</td><td>Liceul Teoretic „G. Vâlsan" Făurei</td><td>Brăila</td><td>Geanina Mădălina Ștefan, Done Mariana</td><td><span class="badge badge-p">Participare</span></td></tr>
+            <tr><td>147</td><td>Saven Denisa</td><td>a X-a</td><td>Liceul Teoretic „G. Vâlsan" Făurei</td><td>Brăila</td><td>Geanina Mădălina Ștefan, Done Mariana</td><td><span class="badge badge-p">Participare</span></td></tr>
+            <tr><td>148</td><td>Mucea Georgiana</td><td>a X-a</td><td>Liceul Teoretic „G. Vâlsan" Făurei</td><td>Brăila</td><td>Geanina Mădălina Ștefan, Done Mariana</td><td><span class="badge badge-p">Participare</span></td></tr>
+            <tr><td>149</td><td>Logosa Denisa-Mihaela</td><td>a XI-a</td><td>Liceul „Corneliu Medrea" Zlatna</td><td>Alba</td><td>Rusan Mirela</td><td><span class="badge badge-i">Premiul I</span></td></tr>
+            <tr><td>150</td><td>Ghica Georgel Daniel</td><td>a XI-a</td><td>Liceul Tehnologic „N. Titulescu" Însurăței</td><td>Brăila</td><td>Mocanu Veronica</td><td><span class="badge badge-ii">Premiul II</span></td></tr>
+            <tr><td>151</td><td>Vrînceanu Andreea</td><td>a XI-a</td><td>Liceul Teoretic „G. Vâlsan" Făurei</td><td>Brăila</td><td>Geanina Mădălina Ștefan, Done Mariana</td><td><span class="badge badge-iii">Premiul III</span></td></tr>
+            <tr><td>152</td><td>Pîrlog Ecaterina</td><td>a XI-a</td><td>Liceul Tehnologic „Edmond Nicolau" Brăila</td><td>Brăila</td><td>Cojocăreanu Liliana</td><td><span class="badge badge-m">Mențiune</span></td></tr>
+            <tr><td>153</td><td>Plăcintă Elena</td><td>a XI-a</td><td>Liceul „Corneliu Medrea" Zlatna</td><td>Alba</td><td>Rusan Mirela</td><td><span class="badge badge-m">Mențiune</span></td></tr>
+            <tr><td>154</td><td>Oltei Daniela</td><td>a XI-a</td><td>Liceul Tehnologic „Edmond Nicolau" Brăila</td><td>Brăila</td><td>Cojocăreanu Liliana</td><td><span class="badge badge-p">Participare</span></td></tr>
+            <tr><td>155</td><td>Popa Mihaela</td><td>a XI-a</td><td>Liceul Tehnologic „Edmond Nicolau" Brăila</td><td>Brăila</td><td>Cojocăreanu Liliana</td><td><span class="badge badge-p">Participare</span></td></tr>
+            <tr><td>156</td><td>Ghelase Georgiana Ramona</td><td>a XI-a</td><td>Colegiul Economic „Ion Ghica" Brăila</td><td>Brăila</td><td>Anghelescu Virginia</td><td><span class="badge badge-p">Participare</span></td></tr>
+            <tr><td>157</td><td>Popa Nicole, Strâmbeanu Dragoș</td><td>a XI-a</td><td>Colegiul Economic „Ion Ghica" Brăila</td><td>Brăila</td><td>Stanciu Nicoleta</td><td><span class="badge badge-p">Participare</span></td></tr>
+            <tr><td>158</td><td>Barangă Rică</td><td>a XI-a</td><td>Liceul Teoretic „G. Vâlsan" Făurei</td><td>Brăila</td><td>Geanina Mădălina Ștefan, Done Mariana</td><td><span class="badge badge-p">Participare</span></td></tr>
+            <tr><td>159</td><td>Barangă Dănuț</td><td>a XI-a</td><td>Liceul Teoretic „G. Vâlsan" Făurei</td><td>Brăila</td><td>Geanina Mădălina Ștefan, Done Mariana</td><td><span class="badge badge-p">Participare</span></td></tr>
+            <tr><td>160</td><td>Prună Ștefania</td><td>a XI-a</td><td>Liceul Teoretic „G. Vâlsan" Făurei</td><td>Brăila</td><td>Geanina Mădălina Ștefan, Done Mariana</td><td><span class="badge badge-p">Participare</span></td></tr>
+            <tr><td>161</td><td>Iordan Gina</td><td>a XI-a</td><td>Liceul Teoretic „G. Vâlsan" Făurei</td><td>Brăila</td><td>Geanina Mădălina Ștefan, Done Mariana</td><td><span class="badge badge-p">Participare</span></td></tr>
+            <tr><td>162</td><td>Balea Alin</td><td>a XI-a</td><td>Liceul Teoretic „G. Vâlsan" Făurei</td><td>Brăila</td><td>Geanina Mădălina Ștefan, Done Mariana</td><td><span class="badge badge-p">Participare</span></td></tr>
+            <tr><td>163</td><td>Mănăilă Laura</td><td>a XI-a</td><td>Liceul Teoretic „G. Vâlsan" Făurei</td><td>Brăila</td><td>Geanina Mădălina Ștefan, Done Mariana</td><td><span class="badge badge-p">Participare</span></td></tr>
+            <tr><td>164</td><td>Brăilescu Georgiana</td><td>a XI-a</td><td>Liceul Teoretic „G. Vâlsan" Făurei</td><td>Brăila</td><td>Geanina Mădălina Ștefan, Done Mariana</td><td><span class="badge badge-p">Participare</span></td></tr>
+            <tr><td>165</td><td>Crișan Mariana Ioana</td><td>a XII-a</td><td>Clubul Copiilor Hârșova – Cercul de Horticultura</td><td>Constanța</td><td>Tudor Mihaela Mirela</td><td><span class="badge badge-i">Premiul I</span></td></tr>
+            <tr><td>166</td><td>Melinte Cristina Mădălina</td><td>a XII-a</td><td>Clubul Copiilor Hârșova – Cercul de Horticultura</td><td>Constanța</td><td>Tudor Mihaela Mirela</td><td><span class="badge badge-m">Mențiune</span></td></tr>
+            <tr><td>167</td><td>Pericică Diana</td><td>a XII-a</td><td>Clubul Copiilor Hârșova – Cercul de Horticultura</td><td>Constanța</td><td>Tudor Mihaela Mirela</td><td><span class="badge badge-p">Participare</span></td></tr>
+            <tr><td>168</td><td>Șuică Teodora</td><td>a XII-a</td><td>Colegiul Tehnic „Viceamiral Ioan Bălănescu" Giurgiu</td><td>Giurgiu</td><td>Tănase Mirela Mădălina</td><td><span class="badge badge-ii">Premiul II</span></td></tr>
+            <tr><td>169</td><td>Frigeoiu Toni Alin</td><td>a XII-a</td><td>Colegiul Economic „Ion Ghica" Brăila</td><td>Brăila</td><td>Lilof Anca</td><td><span class="badge badge-p">Participare</span></td></tr>
+            <tr><td>170</td><td>Tatu Daniel Gabriel</td><td>a XII-a</td><td>Colegiul Economic „Ion Ghica" Brăila</td><td>Brăila</td><td>Bordeeanu Marioara</td><td><span class="badge badge-p">Participare</span></td></tr>
+            <tr><td>171</td><td>Nistor John Alexandru Victor</td><td>a XII-a</td><td>Colegiul Economic „Ion Ghica" Brăila</td><td>Brăila</td><td>Berechet Steluța Claudia</td><td><span class="badge badge-iii">Premiul III</span></td></tr>
+            <tr><td>172</td><td>Tatu Daniel Gabriel</td><td>a XII-a</td><td>Colegiul Economic „Ion Ghica" Brăila</td><td>Brăila</td><td>Istrate Camelia</td><td><span class="badge badge-m">Mențiune</span></td></tr>
+            <tr><td>173</td><td>Dragomirescu Denis Andrei</td><td>grupa PC</td><td>Palatul Copiilor Craiova – structura Filiași</td><td>Dolj</td><td>Băltărețu Nicoleta-Mădălina</td><td><span class="badge badge-i">Premiul I</span></td></tr>
+            <tr><td>174</td><td>Ungureanu Daria Elena</td><td>grupa PC</td><td>Palatul Copiilor Craiova – structura Filiași</td><td>Dolj</td><td>Păun Andreea Raluca</td><td><span class="badge badge-ii">Premiul II</span></td></tr>
+            <tr><td>175</td><td>Georgescu Marius Andrei</td><td>grupa PC</td><td>Palatul Copiilor Craiova – structura Filiași</td><td>Dolj</td><td>Drăghici Oana Iuliana</td><td><span class="badge badge-iii">Premiul III</span></td></tr>
+            <tr><td>176</td><td>Micu Amalia Denize</td><td>grupa PC</td><td>Palatul Copiilor Craiova – structura Filiași</td><td>Dolj</td><td>Săceanu Andreea Marinela</td><td><span class="badge badge-m">Mențiune</span></td></tr>
+            <tr><td>177</td><td>Neacșu Rebeca Ștefania</td><td>grupa PC</td><td>Palatul Copiilor Craiova – structura Filiași</td><td>Dolj</td><td>Roșu Anca</td><td><span class="badge badge-m">Mențiune</span></td></tr>
+            <tr><td>178</td><td>Panea David Nicolae</td><td>grupa PC</td><td>Palatul Copiilor Craiova – structura Filiași</td><td>Dolj</td><td>Coloj Liviu Voicu</td><td><span class="badge badge-p">Participare</span></td></tr>
+            <tr><td>179</td><td>Suciu Antonia</td><td>I</td><td>Palatul Copiilor Satu Mare</td><td>Satu Mare</td><td>Szemak Zsuzsa</td><td><span class="badge badge-i">Premiul I</span></td></tr>
+            <tr><td>180</td><td>Ion Andrei-Valentin</td><td>I</td><td>Liceul Special „Sfânta Maria" Călărași</td><td>Călărași</td><td>Parpalea Angelica</td><td><span class="badge badge-ii">Premiul II</span></td></tr>
+            <tr><td>181</td><td>Chiorean Irina</td><td>I</td><td>Palatul Copiilor Târgu Mureș</td><td>Mureș</td><td>Sabău Corina</td><td><span class="badge badge-iii">Premiul III</span></td></tr>
+            <tr><td>182</td><td>Dinu David Ioan</td><td>I</td><td>Liceul Special „Sfânta Maria" Călărași</td><td>Călărași</td><td>Parpalea Angelica</td><td><span class="badge badge-p">Participare</span></td></tr>
+            <tr><td>183</td><td>Radu Elena Eliza</td><td>I</td><td>Liceul Special „Sfânta Maria" Călărași</td><td>Călărași</td><td>Parpalea Angelica</td><td><span class="badge badge-p">Participare</span></td></tr>
+            <tr><td>184</td><td>Izsak Asztrid</td><td>Pregătitoare</td><td>Palatul Copiilor Satu Mare</td><td>Satu Mare</td><td>Szemak Zsuzsa</td><td><span class="badge badge-m">Mențiune</span></td></tr>
+            <tr><td>185</td><td>Cozneac Anastasia</td><td>Pregătitoare</td><td>Clubul Copiilor Vișeu de Sus</td><td>Maramureș</td><td>Șimon Adelina</td><td><span class="badge badge-m">Mențiune</span></td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- ══ SECȚIUNEA 4: Moment literar-artistic ══ -->
+    <div class="results-subsection">
+      <h3 class="results-sub-title">4. Secțiunea Moment literar-artistic „Vers și cântec pentru Mărțișor"</h3>      <div class="table-wrapper">
+        <table class="results-table" id="t4">
+          <colgroup><col class="col-nr"><col class="col-nume"><col class="col-clasa"><col class="col-scoala"><col class="col-jud"><col class="col-prof"><col class="col-premiu"></colgroup>
+          <thead><tr><th>Nr.</th><th>Numele elevului</th><th>Clasa</th><th>Unitatea de învățământ</th><th>Jud.</th><th>Profesor coordonator</th><th>Premiul</th></tr></thead>
+          <tbody>
+            <tr><td>1</td><td>Grosu Maria-Cristina</td><td>a VIII-a</td><td>Colegiul Național Pedagogic „D. P. Perpessicius" Brăila</td><td>Brăila</td><td>Aldea Carmen-Lăcrămioara</td><td><span class="badge badge-p">Participare</span></td></tr>
+            <tr><td>2</td><td>Papuc Roxana-Mihaela</td><td>a IX-a</td><td>Colegiul Național Pedagogic „D. P. Perpessicius" Brăila</td><td>Brăila</td><td>Aldea Carmen-Lăcrămioara</td><td><span class="badge badge-p">Participare</span></td></tr>
+            <tr><td>3</td><td>Coteț Maria Giulia</td><td>a IX-a</td><td>Colegiul Național Pedagogic „D. P. Perpessicius" Brăila</td><td>Brăila</td><td>Aldea Carmen-Lăcrămioara</td><td><span class="badge badge-p">Participare</span></td></tr>
+            <tr><td>4</td><td>Todireanu Andra</td><td>a VI-a</td><td>Palatul Copiilor Constanța</td><td>Constanța</td><td>Mitan Roxana</td><td><span class="badge badge-iii">Premiul III</span></td></tr>
+            <tr><td>5</td><td>Ștefan Eva</td><td>Pregătitoare</td><td>Școala Gimnazială „Nicolae Bălcescu" Craiova</td><td>Craiova</td><td>Dumitru Doruța</td><td><span class="badge badge-m">Mențiune</span></td></tr>
+            <tr><td>6</td><td>Butușină Rareș, Vrabie Miruna-Andreea, Toma Andreea Maria, Enache Diana Maria</td><td>a VII-a</td><td>Școala Gimnazială „Regele Mihai I" București</td><td>București</td><td>Sorescu Adelina-Elena</td><td><span class="badge badge-m">Mențiune</span></td></tr>
+            <tr><td>7</td><td>Cuprian Alexandra</td><td>a VII-a</td><td>Palatul Copiilor Brăila</td><td>Brăila</td><td>Ilie Elena Carmina</td><td><span class="badge badge-p">Participare</span></td></tr>
+            <tr><td>8</td><td>Oprea Sabina</td><td>a VII-a</td><td>Palatul Copiilor Brăila</td><td>Brăila</td><td>Ilie Elena Carmina</td><td><span class="badge badge-m">Mențiune</span></td></tr>
+            <tr><td>9</td><td>Barbu Alexya-Teodora</td><td>Avansați pian</td><td>Clubul Copiilor Găești</td><td>Dâmbovița</td><td>Florea Simona</td><td><span class="badge badge-p">Participare</span></td></tr>
+            <tr><td>10</td><td>Serafim Laura Ștefania</td><td>Avansați pian</td><td>Clubul Copiilor Găești</td><td>Dâmbovița</td><td>Florea Simona</td><td><span class="badge badge-p">Participare</span></td></tr>
+            <tr><td>11</td><td>Răduță Daria Maria</td><td>Începători pian</td><td>Clubul Copiilor Găești</td><td>Dâmbovița</td><td>Florea Simona</td><td><span class="badge badge-p">Participare</span></td></tr>
+            <tr><td>12</td><td>Predescu Teodora Maria, Alexe Ana Maria, Spătaru Beatrice, Păuna Ana-Maria, Stoica Eva Maria — Grup vocal „Do, re, mi"</td><td>—</td><td>Clubul Copiilor Găești</td><td>Dâmbovița</td><td>Florea Simona</td><td><span class="badge badge-p">Participare</span></td></tr>
+            <tr><td>13</td><td>Nicolae Elena Patricia, Chivu Nicoleta, Ghenu Andra, Alexe Ana Maria, Ilie Maya Elena — Grup vocal „Armonia"</td><td>—</td><td>Clubul Copiilor Găești</td><td>Dâmbovița</td><td>Florea Simona</td><td><span class="badge badge-p">Participare</span></td></tr>
+            <tr><td>14</td><td>Grupul vocal-instrumental „Allegretto"</td><td>Performanță</td><td>Clubul Copiilor Măcin</td><td>Tulcea</td><td>Retea Ionel</td><td><span class="badge badge-i">Premiul I</span></td></tr>
+            <tr><td>15</td><td>Nedelcu Cătălina-Elena</td><td>a VII-a</td><td>Liceul Tehnologic „Simion Leonescu" Luncavița</td><td>Tulcea</td><td>Retea Ionel</td><td><span class="badge badge-m">Mențiune</span></td></tr>
+            <tr><td>16</td><td>Boldi Andra-Natalia, Ciolea Nicoleta-Ștefania, Păcurar Ianis-Ioan</td><td>Pregătitoare</td><td>Colegiul Tehnic Apulum Alba-Iulia</td><td>Alba</td><td>Mărginean Paula Anamaria</td><td><span class="badge badge-m">Mențiune</span></td></tr>
+            <tr><td>17</td><td>Priceputu Andreea</td><td>a XI-a</td><td>Liceul Teoretic „Panait Cerna" Brăila</td><td>Brăila</td><td>Gurzu Nicoleta</td><td><span class="badge badge-iii">Premiul III</span></td></tr>
+            <tr><td>18</td><td>Borca Simina-Anais, Coroja Corina, Kovacs Tiberiu Laurian, Soare Rareș Gabriel</td><td>Pregătitoare</td><td>Colegiul Tehnic Apulum Alba-Iulia</td><td>Alba</td><td>Mărginean Paula Anamaria</td><td><span class="badge badge-p">Participare</span></td></tr>
+            <tr><td>19</td><td>Ciurar Ranya-Natalia, Ivan Matei-Fabian, Stanciu Răzvan, Vlad Ștefania Beatrice</td><td>Pregătitoare</td><td>Colegiul Tehnic Apulum Alba-Iulia</td><td>Alba</td><td>Mărginean Paula Anamaria</td><td><span class="badge badge-p">Participare</span></td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- Buton PDF -->
+    <div class="pdf-row" style="justify-content:center; border-top:none; padding-top:0; margin-top:28px;">
       <div class="pdf-notice">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
         Document oficial cu rezultatele complete:
       </div>
-      <!--
-        Cand ai PDF-ul publicat (Google Drive sau Calameo),
-        inlocuieste href="#" cu link-ul real
-        si sterge: style="opacity:.5;pointer-events:none;"
-      -->
-      <a href="#" class="pdf-btn" style="opacity:.5;pointer-events:none;" target="_blank">
+      <a href="Rezultate_Obiceiuri.pdf" class="pdf-btn" target="_blank">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="15" height="15"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
-        Rezultate Concurs 2026 &mdash; PDF oficial (&#xEE;n cur&#xE2;nd)
+        Rezultate Concurs 2026 &mdash; PDF oficial
       </a>
     </div>
 
@@ -758,17 +1040,21 @@
 .results-meta-box { display:flex; flex-wrap:wrap; justify-content:center; align-items:center; gap:8px; background:var(--crem-inchis); border:1px solid rgba(139,26,26,0.12); border-radius:4px; padding:10px 20px; max-width:700px; margin:0 auto; }
 .results-meta-item { font-size:13px; font-weight:600; color:var(--maro); letter-spacing:0.3px; }
 .results-meta-sep { color:var(--auriu); font-weight:700; }
-.filter-row { display:flex; flex-wrap:wrap; gap:8px; margin-bottom:20px; justify-content:center; }
-.filter-btn { font-family:'Crimson Pro',serif; font-size:13px; font-weight:600; letter-spacing:1px; padding:6px 18px; border:1.5px solid rgba(139,26,26,0.25); border-radius:20px; background:transparent; color:var(--maro-deschis); cursor:pointer; transition:all 0.2s; }
-.filter-btn:hover, .filter-btn.active { background:var(--rosu); color:#fff; border-color:var(--rosu); }
 .table-wrapper { overflow-x:auto; border-radius:4px; border:1px solid rgba(139,26,26,0.10); }
-.results-table { width:100%; border-collapse:collapse; font-size:14.5px; }
+.results-table { width:100%; border-collapse:collapse; font-size:12.5px; table-layout:fixed; }
+.results-table col.col-nr    { width:3%; }
+.results-table col.col-nume  { width:26%; }
+.results-table col.col-clasa { width:7%; }
+.results-table col.col-scoala{ width:28%; }
+.results-table col.col-jud   { width:8%; }
+.results-table col.col-prof  { width:20%; }
+.results-table col.col-premiu{ width:8%; }
 .results-table thead tr { background:var(--rosu); color:#fff; }
-.results-table thead th { padding:13px 16px; text-align:left; font-family:'Crimson Pro',serif; font-weight:600; font-size:12px; letter-spacing:1.5px; text-transform:uppercase; white-space:nowrap; }
+.results-table thead th { padding:9px 8px; text-align:left; font-family:'Crimson Pro',serif; font-weight:600; font-size:11px; letter-spacing:1px; text-transform:uppercase; white-space:nowrap; }
 .results-table tbody tr { border-bottom:1px solid rgba(139,26,26,0.07); transition:background 0.15s; }
 .results-table tbody tr:nth-child(even) { background:var(--crem); }
 .results-table tbody tr:hover { background:var(--crem-inchis); }
-.results-table tbody td { padding:12px 16px; color:var(--maro); line-height:1.4; }
+.results-table tbody td { padding:8px 8px; color:var(--maro); line-height:1.35; word-wrap:break-word; }
 .badge { display:inline-block; font-size:11px; font-weight:700; letter-spacing:1px; text-transform:uppercase; padding:4px 10px; border-radius:3px; white-space:nowrap; }
 .badge-i   { background:#FFD700; color:#5A3E00; }
 .badge-ii  { background:#C0C0C0; color:#2A2A2A; }
@@ -779,18 +1065,28 @@
 .pdf-notice { display:flex; align-items:center; gap:8px; font-size:14px; color:var(--gri); font-style:italic; }
 .pdf-btn { display:inline-flex; align-items:center; gap:8px; background:var(--rosu); color:#fff; font-family:'Crimson Pro',serif; font-size:14px; font-weight:600; padding:10px 20px; border-radius:3px; text-decoration:none; transition:background 0.2s; }
 .pdf-btn:hover { background:var(--rosu-deschis); }
-@media(max-width:600px){ .results-section{padding:28px 16px 24px;} .pdf-row{flex-direction:column;align-items:flex-start;} .results-meta-box{flex-direction:column;gap:4px;} }
+.badge-p { background:#E8E0D4; color:var(--maro-deschis); border:1px solid rgba(61,43,31,0.2); }
+.results-subsection { margin-top:44px; padding-top:36px; border-top:1px solid rgba(139,26,26,0.12); }
+.results-sub-title { font-family:'Playfair Display',serif; font-size:20px; font-weight:700; color:var(--rosu); margin-bottom:20px; padding-bottom:10px; border-bottom:2px solid var(--auriu); }
+@media(max-width:768px){
+  main { padding: 32px 12px 60px; }
+  .results-section { padding: 28px 12px 24px; }
+  .results-sub-title { font-size:16px; }
+  .results-table { font-size:11px; }
+  .results-table thead th { padding:7px 5px; font-size:10px; }
+  .results-table tbody td { padding:6px 5px; }
+  .badge { font-size:10px; padding:2px 6px; }
+  .magazine-grid { flex-direction:column; align-items:center; gap:20px; }
+  .card { width:100%; max-width:360px; }
+  .pdf-row { flex-direction:column; align-items:stretch; gap:12px; }
+  .pdf-btn { justify-content:center; }
+  .about-section { grid-template-columns:1fr; }
+  .hero-title { font-size:clamp(28px,8vw,60px); }
+  .hero-sub { font-size:16px; }
+  .section-heading h2 { font-size:26px; }
+}
 </style>
 
-<script>
-function filterTable(btn, premiu) {
-  document.querySelectorAll('#resultsTable tbody tr').forEach(row => {
-    row.style.display = (premiu === 'all' || row.dataset.premiu === premiu) ? '' : 'none';
-  });
-  document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
-  btn.classList.add('active');
-}
-</script>
 
 </main>
 
